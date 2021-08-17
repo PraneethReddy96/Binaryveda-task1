@@ -7,9 +7,12 @@ import android.view.View
 import com.praneeth.task1.databinding.ActivityMainBinding
 
 class LandingPageActivity : AppCompatActivity() {
+
+    private lateinit var binding: ActivityMainBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        var binding: ActivityMainBinding = ActivityMainBinding.inflate(layoutInflater)
+        binding= ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         binding.mbRegisterButton.setOnClickListener(View.OnClickListener {

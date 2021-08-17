@@ -10,4 +10,13 @@
     <color name="tomato">#ec5151</color>
     <color name="sky_blue">#577bdf</color>
     <color name="light_grey">#d8d8d8</color>
+    <color name="cherry">#d90034</color>
+    <color name="light_indigo">#6385e1</color>
+    <color name="mid_green">#44a33d</color>
+    <color name="purple">#5f0e47</color>
+    <color name="maroon">#9e003d</color>
+    <color name="red">#d90034</color>
+    <color name="orange">#ff4518</color>
+    <color name="yellow">#ffc200</color>
+    <color name="grey">#aeaeae</color>
 </resources>
