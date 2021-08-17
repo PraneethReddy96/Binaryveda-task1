@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">task1</string>
+    <string name="sub_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</string>
+    <string name="register">register</string>
+    <string name="register_continuation_text">me as collector</string>
+    <string name="track">track my application</string>
+    <string name="lorem_ipsum_n_is_used">lorem ipsum \nis used</string>
+    <string name="body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</string>
+    <string name="copyRight">Content Copyright reserved.</string>
+    <string name="privacy_policy">Privacy Policy.</string>
+    <string name="reach_us">Reach Us.</string>
+    <string name="disclaimers">Disclaimers.</string>
+    <string name="team">Team.</string>
+    <string name="affiliations">Affiliations</string>
+    <string name="about_us">About Us.</string>
+    <string name="header">header</string>
+    <string name="display_image">display_image</string>
+    <string name="user">user</string>
+    <string name="mobile">mobile</string>
+</resources>
