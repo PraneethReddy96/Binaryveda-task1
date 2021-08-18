@@ -5,19 +5,20 @@ import androidx.fragment.app.FragmentManager
 import androidx.lifecycle.Lifecycle
 import androidx.viewpager2.adapter.FragmentStateAdapter
 
-class FragmentAdapter(val fragmentManager: FragmentManager, val lifecycle: Lifecycle) :
+class ViewPagerAdapter(val fragmentManager: FragmentManager, val lifecycle: Lifecycle) :
     FragmentStateAdapter(fragmentManager, lifecycle) {
+
     override fun getItemCount(): Int {
-        TODO("Not yet implemented")
+        return  3
     }
 
     override fun createFragment(position: Int): Fragment {
 
         when (position) {
 
-            1-> ExhibitionsFragment()
+            1-> return ExhibitionsFragment()
 
-            2-> RevenueFragment()
+            2-> return RevenueFragment()
 
         }
          return UploadsFragment()
