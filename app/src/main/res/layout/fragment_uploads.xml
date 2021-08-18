@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".UploadsFragment">
+    tools:context=".views.fragments.UploadsFragment">
 
    <androidx.recyclerview.widget.RecyclerView
        android:id="@+id/uploadsRecyclerView"

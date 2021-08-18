@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    tools:context=".ProfilePageActivity">
+    tools:context=".views.ProfilePageActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -376,6 +376,10 @@
             android:id="@+id/viewPager2"
             android:layout_width="match_parent"
             android:layout_height="@dimen/dp_500"
+            android:layout_marginStart="@dimen/dp_10"
+            android:layout_marginEnd="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_20"
+            android:layout_marginBottom="@dimen/dp_20"
             android:layout_below="@id/tabLayout" />
 
     </RelativeLayout>

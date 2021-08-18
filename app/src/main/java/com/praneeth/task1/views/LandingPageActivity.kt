@@ -1,9 +1,8 @@
-package com.praneeth.task1
+package com.praneeth.task1.views
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
 import com.praneeth.task1.databinding.ActivityMainBinding
 
 class LandingPageActivity : AppCompatActivity() {
@@ -15,10 +14,10 @@ class LandingPageActivity : AppCompatActivity() {
         binding= ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.mbRegisterButton.setOnClickListener(View.OnClickListener {
+        binding.mbRegisterButton.setOnClickListener {
             val intent = Intent(this, ProfilePageActivity::class.java)
             startActivity(intent)
-        })
+        }
 
     }
 }

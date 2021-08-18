@@ -1,9 +1,11 @@
-package com.praneeth.task1
+package com.praneeth.task1.views.fragments
 
 import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.GridLayoutManager
+import com.praneeth.task1.R
+import com.praneeth.task1.adapters.ImagesAdapter
 import com.praneeth.task1.databinding.FragmentUploadsBinding
 
 class UploadsFragment : Fragment(R.layout.fragment_uploads) {

@@ -1,9 +1,11 @@
-package com.praneeth.task1
+package com.praneeth.task1.views
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.viewpager2.widget.ViewPager2
 import com.google.android.material.tabs.TabLayout
+import com.praneeth.task1.R
+import com.praneeth.task1.adapters.ViewPagerAdapter
 import com.praneeth.task1.databinding.ActivityProfilePageBinding
 
 class ProfilePageActivity : AppCompatActivity() {
@@ -13,24 +15,27 @@ class ProfilePageActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding= ActivityProfilePageBinding.inflate(layoutInflater)
+        binding = ActivityProfilePageBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         val fragmentManager = supportFragmentManager
-        adapter1= ViewPagerAdapter(fragmentManager,lifecycle)
+        adapter1 = ViewPagerAdapter(fragmentManager, lifecycle)
         binding.viewPager2.adapter = adapter1
 
 
         binding.apply {
 
-            tabLayout.addTab(tabLayout.newTab().setText("Uploads").setIcon(R.drawable.ic_group10copy__1_,))
-            tabLayout.addTab(tabLayout.newTab().setText("Exhibitions").setIcon(R.drawable.ic_group6copy__1_))
-            tabLayout.addTab(tabLayout.newTab().setText("Revenue").setIcon(R.drawable.ic_group3copy__2_))
+            tabLayout.addTab(tabLayout.newTab().setText(R.string.uploads)
+                .setIcon(R.drawable.ic_group10copy__1_))
+            tabLayout.addTab(tabLayout.newTab().setText(R.string.exhibitions)
+                .setIcon(R.drawable.ic_group6copy__1_))
+            tabLayout.addTab(tabLayout.newTab().setText(R.string.revenue)
+                .setIcon(R.drawable.ic_group3copy__2_))
 
             tabLayout.addOnTabSelectedListener(object : TabLayout.OnTabSelectedListener {
                 override fun onTabSelected(tab: TabLayout.Tab?) {
 
-                    viewPager2.setCurrentItem(tab!!.position)
+                    viewPager2.currentItem = tab!!.position
 
                 }
 
@@ -42,7 +47,7 @@ class ProfilePageActivity : AppCompatActivity() {
             })
 
 
-            viewPager2.registerOnPageChangeCallback(object : ViewPager2.OnPageChangeCallback(){
+            viewPager2.registerOnPageChangeCallback(object : ViewPager2.OnPageChangeCallback() {
 
                 override fun onPageSelected(position: Int) {
                     super.onPageSelected(position)

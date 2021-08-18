@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    tools:context=".LandingPageActivity">
+    tools:context=".views.LandingPageActivity">
 
 
     <RelativeLayout
@@ -60,6 +60,7 @@
             android:textColor="@color/white"
             android:textSize="@dimen/sp_25"
             app:cornerRadius="@dimen/dp_5"
+            app:iconGravity="start"
             app:icon="@drawable/ic_group3copy"
             app:iconSize="@dimen/dp_15" />
 
@@ -86,7 +87,7 @@
             android:layout_marginStart="@dimen/dp_5"
             android:layout_marginTop="@dimen/dp_30"
             app:drawableStartCompat="@drawable/ic_group3copy3"
-            android:drawablePadding="@dimen/dp_5"
+            android:drawablePadding="@dimen/dp_7"
             android:fontFamily="@font/barlow_condensed_extra_light"
             android:text="@string/track"
             android:textColor="@color/sky_blue"

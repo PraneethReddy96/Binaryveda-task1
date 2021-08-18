@@ -1,11 +1,14 @@
-package com.praneeth.task1
+package com.praneeth.task1.adapters
 
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.lifecycle.Lifecycle
 import androidx.viewpager2.adapter.FragmentStateAdapter
+import com.praneeth.task1.views.fragments.ExhibitionsFragment
+import com.praneeth.task1.views.fragments.RevenueFragment
+import com.praneeth.task1.views.fragments.UploadsFragment
 
-class ViewPagerAdapter(val fragmentManager: FragmentManager, val lifecycle: Lifecycle) :
+class ViewPagerAdapter( fragmentManager: FragmentManager,  lifecycle: Lifecycle) :
     FragmentStateAdapter(fragmentManager, lifecycle) {
 
     override fun getItemCount(): Int {

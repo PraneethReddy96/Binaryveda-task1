@@ -10,10 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Task1">
         <activity
-            android:name=".ProfilePageActivity"
+            android:name=".views.ProfilePageActivity"
             android:launchMode="singleTask"/>
         <activity
-            android:name=".LandingPageActivity"
+            android:name=".views.LandingPageActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

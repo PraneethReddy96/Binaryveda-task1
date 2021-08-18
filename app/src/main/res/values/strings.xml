@@ -1,5 +1,5 @@
-<resources>
-    <string name="app_name">task1</string>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name" tools:ignore="Typos">task1</string>
     <string name="sub_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</string>
     <string name="register">register</string>
     <string name="register_continuation_text">me as collector</string>
